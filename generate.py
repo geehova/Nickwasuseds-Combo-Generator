@@ -23,6 +23,8 @@ names = json.loads(open('names.json').read())
 surnames = json.loads(open('names.json').read())
 words = json.loads(open('words.json').read())
 
+kek = 1
+
 
 def scam():
     with open('list.txt', 'wb') as f:
@@ -36,7 +38,13 @@ def scam():
             password = word_extra + word + word_extra
             combo = ('{0}:{1} \n'.format(email, password)).encode()
             f.write(combo)
-            print(combo)
+            global kek
+            kek = (kek + 1)
+            lel = random.randint(1, 2)
+            if lel == 1:
+                print(Fore.RED + '{}        {}'.format(kek, combo))
+            if lel == 2:
+                print(Fore.CYAN + '{}       {}'.format(kek, combo))
             pass
 
 
