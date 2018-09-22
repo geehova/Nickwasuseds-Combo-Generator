@@ -1,5 +1,6 @@
 from pandas import read_html, DataFrame, concat
 import json
+import lxml
 
 colors = read_html('https://simple.wikipedia.org/wiki/List_of_colors')[0][0][1:]
 countries = read_html('https://simple.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)')[0][1][3:].str.replace(" ", "")
