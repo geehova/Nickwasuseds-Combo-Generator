@@ -21,9 +21,9 @@ email_domains = ['gmail.com', 'yahoo.com', 'hotmail.com', 'aol.com', 'outlook.co
                  'protonmail.com', 'fastmail.com', 'zoho.com',
                  'mail.com', 'hushmail.com']
 
-names = json.loads(open('names.json').read())
-surnames = json.loads(open('names.json').read())
-words = json.loads(open('words.json').read())
+names = json.loads(open('names.json', encoding="utf8").read())
+surnames = json.loads(open('names.json', encoding="utf8").read())
+words = json.loads(open('words.json', encoding="utf8").read())
 
 kek = 1
 
