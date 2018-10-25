@@ -11,6 +11,11 @@ Compiled with pyinstaller (Linux & Windows)
 cd /thedirectory <br>
 python3 generate.py
 
+or
+
+cd /thedirectory <br>
+./generate
+
 # How to Run (Windows)?
 
 run the .exe File
